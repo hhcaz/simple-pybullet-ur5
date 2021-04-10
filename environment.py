@@ -64,7 +64,7 @@ def read_user_params(param_ids):
 
 class DebugAxes(object):
     """
-    可视化某个局部坐标系, 红色x轴, 蓝色y轴, 绿色z轴
+    可视化某个局部坐标系, 红色x轴, 绿色y轴, 蓝色z轴
     """
     def __init__(self):
         self.uids = [-1, -1, -1]
