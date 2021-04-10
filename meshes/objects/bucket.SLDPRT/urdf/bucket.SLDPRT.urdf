@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.5.1-0-g916b5db  Build Version: 1.5.7152.31018
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="bucket.SLDPRT">
+  <link
+    name="bucket.SLDPRT">
+    <inertial>
+      <origin
+        xyz="8.9822E-16 -7.24171511999094E-17 0.061601"
+        rpy="0 0 0" />
+      <mass
+        value="13.519" />
+      <inertia
+        ixx="0.64029"
+        ixy="-9.0421E-16"
+        ixz="-1.3607E-15"
+        iyy="2.4855"
+        iyz="1.28127039819607E-16"
+        izz="3.0106" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="1.5707963267949 0 0" />
+      <geometry>
+        <mesh
+          filename="package://bucket.SLDPRT/meshes/bucket.SLDPRT.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+        <texture
+          filename="package://bucket.SLDPRT/textures/" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="1.5707963267949 0 0" />
+      <geometry>
+        <mesh
+          filename="package://bucket.SLDPRT/meshes/bucket.SLDPRT.STL" />
+      </geometry>
+    </collision>
+  </link>
+</robot>
