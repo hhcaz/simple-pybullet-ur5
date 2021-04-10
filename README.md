@@ -15,3 +15,6 @@ pybullet==3.1.2
 open3d==0.12.0
 ```
 
+
+
+opengl camera perception refers to https://github.com/ethz-asl/vgn.git
