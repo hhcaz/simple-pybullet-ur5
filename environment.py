@@ -171,7 +171,7 @@ class Environment(object):
         param_ids = setup_target_pose_params(init_xyz, init_rpy)
 
         while True:
-            target_pose = read_user_params(param_ids)
+            target_pose = read_user_params(param_ids)  # [x, y, z, roll, pitch, yaw, finger openness]
             self.arm.move_to(target_pose[:3],
                             p.getQuaternionFromEuler(target_pose[3:6]))
             self.arm.control_gripper(target_pose[-1])
@@ -180,7 +180,7 @@ class Environment(object):
 
 if __name__ == "__main__":
     env = Environment()
-    time.sleep(3)
+    time.sleep(2)
 
     print("[INFO] Start manual control!")
     env.start_manual_control()
