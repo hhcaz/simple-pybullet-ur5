@@ -72,7 +72,7 @@ if __name__ == "__main__":
     p.resetDebugVisualizerCamera(1.674, 70, -50.8, [0, 0, 0])
 
     plane = p.loadURDF("plane.urdf", [0, 0, 0], [0, 0, 0, 1])  # 地面
-    cube = p.loadURDF("cube_small.urdf", [0, 0, 0.2], [0, 0, 0, 1])  # 小方块，待会儿相机就绑在这上面
+    cube = p.loadURDF("cube_small.urdf", [0, 0, 0.1], [0, 0, 0, 1])  # 小方块，待会儿相机就绑在这上面
 
     camera_config = "./setup.json"
     with open(camera_config, "r") as j:
